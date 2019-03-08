@@ -8,7 +8,7 @@ namespace ConsoleApp5
 {
     class Program
     {
-        static int[] array = new int[] { 2, 1, 4, 3, 5, 0, 7, 6, 8, 9 };
+        static int[] array = new int[] { 2, 1, 4, 3, 5, 0, 7, 6, 8, 9, -1 };
 
         static void Main(string[] args)
         {
@@ -19,7 +19,9 @@ namespace ConsoleApp5
 
 
 
-            array.Insert_sort();
+            array = array.Insert_sort();
+            var binaryresult = BinaryS(array, search);
+            Console.WriteLine(binaryresult);
             Console.Read();
         }
         static int BinaryS(int[] array, int key)
