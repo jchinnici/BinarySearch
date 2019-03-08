@@ -22,7 +22,7 @@ namespace ConsoleApp5
             array.Insert_sort();
             Console.Read();
         }
-        object BinaryS(int[] array, int key)
+        static int BinaryS(int[] array, int key)
         {
             int min = 0;
             int max = array.Length - 1;
@@ -43,7 +43,7 @@ namespace ConsoleApp5
                 }
 
             }
-            return "Int not found";
+            return -1;
         }
     }
 }
